@@ -9,7 +9,7 @@ const Contact = (props) => {
     return (
         <div className="container">
             <h4 className="center">Contact</h4>
-            <p className="center">Honme ejxcjbxkzjckxzc</p>
+            <p className="center"></p>
         </div>
     )
 }
