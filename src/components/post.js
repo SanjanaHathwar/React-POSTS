@@ -2,6 +2,10 @@ import React , {Component} from 'react';
 import axios from 'axios';
 
 class post extends Component {
+    handleClick = (event) => {
+        event.preventDefault();
+        console.log(this.state.id)
+    }
     state = {
         id : null
     }
@@ -23,6 +27,8 @@ class post extends Component {
             <div className="post">
                 <h1 className="center">{this.state.post.title}</h1>
                 <p>{this.state.post.body}</p>
+                <button className="btn grey" onClick = {this.handleClick}>GETID</button>
+
             </div>
 
         ) 
